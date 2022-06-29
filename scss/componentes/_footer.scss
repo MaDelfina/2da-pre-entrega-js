@@ -1,0 +1,53 @@
+@import "../base/extends";
+
+/*footer*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer #social {
+    @extend %social;
+}
+
+footer #social li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer #botones {
+    @extend %botones
+}
+
+footer #botones div {
+    text-align: center;
+}
+
+footer #botones span {
+    @extend %botones-span;
+}
+
+footer #botones img {
+    max-width: 60px;
+}
+
+@media (max-width: 768px) {
+    footer #botones {
+        margin: 4em auto 0;
+    }
+
+    footer #botones div {
+        margin-bottom: 30px;
+    }
+}
+
+/*estilo para las paginas de INFO*/
+.paginas-contenido {
+    margin: 100px 0px 0px 0px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.espacio {
+    margin-top: 50px;
+}

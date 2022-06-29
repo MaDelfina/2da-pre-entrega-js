@@ -1,0 +1,21 @@
+/*talles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// .paginas-contenido {
+//     width: 100%;
+// }
+
+.size-photo {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+    .paginas-contenido {
+        margin-top: 500px;
+        padding: 10px 10px;
+    }
+}

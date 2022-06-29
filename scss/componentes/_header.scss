@@ -1,0 +1,148 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+/*header*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	@include body(1.2rem, 1.6em, 0);
+
+	header {
+		@extend %header;
+		background-position: center;
+
+		a {
+			color: #003B46;
+		}
+	}
+
+	@media screen and (max-width: 375px) {
+		.menu-icon {
+			display: block;
+			cursor: pointer;
+			padding: 0.5rem 1rem;
+		}
+	
+		.navigation {
+			width: 100%;
+			margin-top: 1rem;
+	
+			ul {
+				display: none;
+	
+				li {
+					display: block;
+	
+					a {
+						display: block;
+						padding: 0.5rem 0;
+						transition: all 0.4 linear;
+						border-radius: 5px;
+	
+						&:hover {
+							background: rgb(209, 205, 205);
+						}
+					}
+				}
+			}
+	
+			ul.show {
+				display: block;
+			}
+		}
+		
+	}
+}
+
+.icono {
+	z-index: 200;
+	background-color: rgb(175, 175, 175);
+}
+
+input {
+	text-indent: 6px;
+}
+
+.dropdown-menu {
+	li {
+		background-color: $menu-bg-color;
+		width: 100%;
+		text-align: center;
+
+		a:hover {
+			color: #ffffff;
+		}
+	}
+
+}
+
+p {
+	margin-bottom: 1, 6em;
+}
+
+.container {
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.logo-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo {
+	letter-spacing: 5px;
+	font-size: 1.2em;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+
+			a {
+				display: block;
+				padding: 0.5rem 1rem;
+				transition: all 0.4 linear;
+				border-radius: 5px;
+
+				&:hover {
+					background: rgb(209, 205, 205);
+				}
+			}
+		}
+	}
+}
+
+.main {
+	padding-top: 2rem;
+}
+
+.btn-outline-success {
+	background-color: black;
+	border-color: black;
+}
+
+.imagenes {
+	width: 100%;
+}
+
+.card-title {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	@extend %card;
+}

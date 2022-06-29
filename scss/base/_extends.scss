@@ -1,0 +1,36 @@
+/*header*/
+%header {
+    z-index: 100;
+    position: fixed;
+    background-color: $bg-color;
+    color: $color;
+    padding: 2.5rem 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+%card {
+    color: #003B46;
+    display: flex;
+    justify-content: center;
+}
+
+/*footer*/
+%social {
+    text-align: center;
+    margin-top: -20px;
+}
+
+%botones {
+    margin: 5em auto 2em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+%botones-span {
+    display: block;
+    font-size: 12px;
+    margin: 15px auto 20px;
+    letter-spacing: 1.3px;
+}

@@ -1,0 +1,23 @@
+/*enterizas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

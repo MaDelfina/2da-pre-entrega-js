@@ -1,0 +1,5 @@
+@mixin body($size, $height, $margin){
+    font-size: $size;
+    line-height: $height;
+    $margin: $margin;
+}

@@ -1,0 +1,30 @@
+/*bombachas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+    margin: 130px 0px 0px 0px;
+}
+
+.card {
+    width: 70%;
+    margin: auto;
+}
+
+.carrito {
+    position: relative;
+    padding-left: 80%;
+}
+
+@media screen and (max-width: 375px) {
+    .carousel-item{
+        width: 100%;
+        margin: 130px 0px 0px 0px;
+    }
+}
+
+.promociones {
+    margin: 16px;
+}
